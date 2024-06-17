@@ -1,5 +1,4 @@
 "use client";
-import { chats } from '@prisma/client';
 import React, { useState } from 'react'
 import Link from 'next/link';
 import { MessageCircle, PlusCircle,CircleX,ArrowLeftIcon } from 'lucide-react';
