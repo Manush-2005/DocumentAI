@@ -54,7 +54,7 @@ export async function getcontext(query:string,namespace:string){
     const matches = await getMatchesfromembeddings(queryembeddings,namespace);
 
     const qualifyingDocs = matches?.filter(
-        (match) => match.score && match.score > 0.6
+        (match:any) => match.score && match.score > 0.6
     );
 
     type metadata = {
@@ -62,7 +62,7 @@ export async function getcontext(query:string,namespace:string){
         pageNumber: number;
     }
 
-    let docs = qualifyingDocs?.map(match => (match.metadata as metadata).text);
+    let docs = qualifyingDocs?.map((match: { metadata: { text: string; pageNumber: number; }; }) => (match.metadata as metadata).text);
     return docs?.join("\n")
 
 }
