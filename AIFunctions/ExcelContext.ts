@@ -1,6 +1,6 @@
 import { getEmbeddings } from "./Embeddings";
 import { index } from "./pinecone";
-import { uniqueNamespace } from "./Namespacegeneratorexcel";
+
 
 export async function getMatchesExcelfromembeddings(embeddings: number[],namespace:string){
 
