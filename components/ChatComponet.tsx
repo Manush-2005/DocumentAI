@@ -67,6 +67,7 @@ const ChatComponet = ({chatId}: Props) => {
       <div className='sticky top-0 inset-x-0 p-2 bg-white h-fit'>
         <h3 className='text-xl font-bold'> Chat</h3>
       </div>
+      {/* @ts-ignore */}
       <MessagesList messages={messages}/>
     </div>
 

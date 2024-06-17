@@ -30,7 +30,7 @@ const ExcelViewer = ({ excelUrl} :{excelUrl:string}) => {
 
     const worksheetName = workbook.SheetNames[0];
     const worksheet = workbook.Sheets[worksheetName];
-    const rows = XLSX.utils.sheet_to_json(worksheet);
+    const rows = XLSX.utils.sheet_to_json(worksheet) as { [key: string]: string | number }[];
     console.log(rows);
     setData(rows);
    

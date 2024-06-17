@@ -30,7 +30,7 @@ const { userId } : { userId: string | null } = auth();
     }
  });
 
- const currentchat = chats.find(chat => chat.id === chatId);
+ const currentchat = chats.find((chat:any) => chat.id === chatId);
  const currentchaturl = currentchat?.pdfurl;
  const currentchatname = currentchat?.pdfName;
 
