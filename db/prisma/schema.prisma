@@ -9,7 +9,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("postgresql://Frist_owner:g3H7vxUTsqaV@ep-nameless-math-a1i3i69x.ap-southeast-1.aws.neon.tech/DocumentAI?sslmode=require")
+  url      = env("DATABASE_URL")
 }
 
 model chats {
