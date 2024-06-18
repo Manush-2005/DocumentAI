@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate": "npx prisma generate",
+    "migrate": "npx prisma migrate dev"
+
   },
   "dependencies": {
     "@ai-sdk/google": "^0.0.20",
