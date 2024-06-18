@@ -16,13 +16,19 @@ import {
 import axios from 'axios';
 import FileUpload from './FileUpload';
 import { Spinner } from './Loader';
-import { chats } from '@prisma/client';
 
-
+type chats = {
+  id: string;
+  pdfName: string;
+  pdfurl: string;
+  createdAt: Date;
+  userId: string;
+  namespace: string | null;
+}
 
 type Props = {
-    chats: chats[];
-    chatId: string;
+  chats: chats[];
+  chatId: string;
 }
 
 const Chatsidebar = ({chats,chatId}: Props) => {
