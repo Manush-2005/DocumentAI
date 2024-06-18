@@ -1,5 +1,4 @@
 "use client";
-import { messages } from '@prisma/client';
 import React from 'react'
 import { cn } from '@/lib/utils'
 import { MessageCircleOff } from "lucide-react";
@@ -8,10 +7,18 @@ import { LoaderPinwheel } from 'lucide-react';
 import Markdown from 'react-markdown';
 
 
-  
+type role = "user" | "assistant"; 
+
+type messages = {
+  messageid: string;
+  chatid: string;
+  content: string;
+  createdAt: Date;
+  role: role;
+}
 
 type Props = {
-    messages: messages[];
+  messages: messages[];
 }
 
 
