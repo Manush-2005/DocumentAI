@@ -20,7 +20,6 @@ import { chats } from '@prisma/client';
 
 
 
-
 type Props = {
     chats: chats[];
     chatId: string;
