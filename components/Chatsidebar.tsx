@@ -16,7 +16,7 @@ import {
 import axios from 'axios';
 import FileUpload from './FileUpload';
 import { Spinner } from './Loader';
-
+import { chats } from '@prisma/client';
 
 
 

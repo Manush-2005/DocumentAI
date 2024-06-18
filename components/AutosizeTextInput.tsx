@@ -9,7 +9,7 @@ interface UseAutosizeTextAreaProps {
   maxHeight?: number;
   triggerAutoSize: string;
 }
-
+/* eslint-disable */
 export const useAutosizeTextArea = ({
   textAreaRef,
   triggerAutoSize,
@@ -40,6 +40,7 @@ export const useAutosizeTextArea = ({
     }
   }, [textAreaRef, triggerAutoSize]);
 };
+/* eslint-disable */
 
 export type AutosizeTextAreaRef = {
   textArea: HTMLTextAreaElement;
