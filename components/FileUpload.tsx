@@ -182,7 +182,9 @@ const FileUpload = () => {
         ) : (
           <>
             <Inbox className="w-10 h-10 text-blue-500" />
-            <p className="mt-2 text-sm text-slate-400">Drop PDF or Excel Here
+            <p className="mt-2 text-sm text-slate-400">
+              
+              Click to Drop PDF or Excel Here
               (Max 5MB)
             </p>
           </>
