@@ -140,7 +140,7 @@ const Chatsidebar = ({chats,chatId}: Props) => {
 
           setisLoading(true);
           
-          const res = await axios.post(`http://localhost:3000/api/deletechat`,{
+          const res = await axios.post(`/api/deletechat`,{
 
             chatId: chatId as string
           });

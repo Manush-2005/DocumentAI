@@ -21,7 +21,7 @@ const FileUpload = () => {
     const {mutate} = useMutation({
         mutationFn: async ({file_name, file_url,file_type} : {file_name: string, file_url: string,file_type:string}) => {
 
-            const res = await axios.post("http://localhost:3000/api/createchat",{name:file_name,url:file_url,file_type:file_type});
+            const res = await axios.post("/api/createchat",{name:file_name,url:file_url,file_type:file_type});
 
             return res.data;
         }

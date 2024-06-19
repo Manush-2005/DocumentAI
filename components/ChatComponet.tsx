@@ -21,7 +21,7 @@ const ChatComponet = ({chatId}: Props) => {
   const {data} = useQuery({
     queryKey: ["chat",chatId],
     queryFn: async () => {
-      const res = await axios.post(`http://localhost:3000/api/getmessage`,{
+      const res = await axios.post(`/api/getmessage`,{
         chatId: chatId as string
       });
 
